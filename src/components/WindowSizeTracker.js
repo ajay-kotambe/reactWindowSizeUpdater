@@ -11,11 +11,9 @@ function WindowSizeTracker() {
       setWindowSize({
         width: window.innerWidth,
         height: window.innerHeight,
-      });
+      }); 
     };
-
     window.addEventListener("resize", handleResize);
-
     // Cleanup
     return () => window.removeEventListener("resize", handleResize);
   }, []);
